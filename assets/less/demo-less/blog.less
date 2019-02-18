@@ -1,0 +1,263 @@
+.blog-masonry {
+	.blog-posts {
+		.blog-item {
+			.custom-navigation {
+				top: 20%!important;
+			}
+		}
+	}
+}
+.grids {
+	.blog-posts {
+		.blog-item {
+			.custom-navigation {
+				top: 20%!important;
+			}
+		}
+	}
+}
+.blog-standard {
+	.blog-posts {
+		.blog-item {
+			margin-bottom: 45px;
+			img {
+				width: 100%;
+				overflow: hidden;
+			}
+			.down-content {
+				padding-bottom: 45px;
+				border-bottom: 2px solid @border-color;
+				margin-top: 20px;
+				span {
+					color: @light-color;
+					text-transform: uppercase;
+					font-size: 14px;
+				}
+				h4 {
+					margin-top: 5px;
+					font-size: 24px;
+					line-height: 28px;
+				}
+				p {
+					margin-top: 20px;
+					margin-bottom: 30px;
+				}
+				.text-button {
+					float: left;
+				}
+				ul.share-icons {
+					float: right;
+					li {
+						display: inline-block;
+						margin-left: 10px;
+						a {
+							color: @light-color;
+						}
+						a:hover {
+							color: @heading-color;
+							transition: all .5s;
+						}
+					}
+				}
+			}
+			.flex-control-paging {
+				display: none;
+			}
+			.custom-navigation {
+				transform: translateY(-50%);
+				top: 28%;
+				overflow: hidden;
+				width: 100%;
+				display: inline-block;
+				position: absolute;
+				@media (max-width: 768px) {
+					display: none;
+				}
+				.flex-prev {
+					float: left;
+					width: 42px;
+					height: 42px;
+					display: inline-block;
+					text-align: center;
+					line-height: 42px;
+					background-color: rgba(250, 250, 250, 0.95);
+				}
+				.flex-next {
+					margin-right: 30px;
+					float: right;
+					width: 42px;
+					height: 42px;
+					display: inline-block;
+					text-align: center;
+					line-height: 42px;
+					background-color: rgba(250, 250, 250, 0.95);
+				}
+			}
+		}
+		.blog-pagination {
+			margin-top: 15px;
+			ul {
+				li {
+					display: inline-block;
+					margin-right: 10px;
+					a {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+}
+.single-post {
+	.blog-posts {
+		.blog-item {
+			margin-bottom: 30px;
+			.blog-description {
+				margin-top: 20px;
+				padding-bottom: 45px;
+			}
+			.tags {
+				float: left;
+				@media (max-width: 768px) {
+					float: none;
+				}
+				h6 {
+					margin: 5px 5px 5px 0px;
+					float: left;
+					font-size: 18px;
+				}
+				span {
+					font-size: 17px;
+					text-transform: capitalize;
+					@media (max-width: 768px) {
+						font-size: 15px;
+					}
+					a {
+						color: @base-color;
+					}
+					a:hover {
+						color: @heading-color;
+						transition: all .5s;
+					}
+				}
+			}
+			.share-icons {
+				@media (max-width: 768px) {
+					text-align: center;
+					float: none!important;
+					margin-top: 15px;
+				}
+			}
+		}
+		.about-author {
+			padding-bottom: 30px;
+			border-bottom: 2px solid @border-color;
+			h2 {
+				font-size: 20px;
+				margin-bottom: 25px;
+			}
+			.content {
+				img {
+					float: left;
+					width: 100px;
+					margin-right: 20px;
+				}
+				.right-text {
+					h4 {
+						font-size: 18px;
+						margin-top: 0px;
+						float: left;
+					}
+					ul.social-icons {
+						float: right;
+						li {
+							display: inline-block;
+							margin-right: 8px;
+							a {
+								color: @light-color;
+							}
+							a:hover {
+								color: @heading-color;
+								transition: all .5s;
+							}
+						}
+					}
+					p {
+						padding-top: 35px;
+					}
+				}
+			}
+		}
+		.comments {
+			border-bottom: 2px solid @border-color;
+			margin-top: 45px;
+			h2 {
+				font-size: 20px;
+				margin-bottom: 30px;
+			}
+			ul.comments-list {
+				li {
+					display: inline-block;
+					margin-bottom: 30px;
+					img {
+						float: left;
+						width: 80px;
+						margin-right: 15px;
+						display: inline-block;
+					}
+					h4 {
+						margin-top: 0px;
+						font-size: 18px;
+						margin-bottom: 5px;
+					}
+					span {
+						font-size: 14px;
+					}
+					p {
+						line-height: 28px;
+						margin-top: 8px;
+						margin-left: 95px;
+						margin-bottom: 10px;
+					}
+					a {
+						font-size: 16px;
+						margin-left: 95px;
+					}
+				}
+				.replied-comment {
+					margin-left: 95px;
+				}
+			}
+		}
+		.post-comment {
+			margin-top: 45px;
+			h2 {
+				font-size: 20px;
+				margin-bottom: 30px;
+			}
+			textarea {
+				width: 100%;
+				max-width: 100%;
+				min-height: 160px;
+				height: 160px;
+				max-height: 300px;
+				border: 1px solid @border-color;
+				outline: none;
+				padding: 8px 13px;
+				font-size: 15px;
+			}
+			input {
+				margin-top: 20px;
+				width: 100%;
+				height: 48px;
+				border: 1px solid @border-color;
+				outline: none;
+				padding-left: 13px;
+				font-size: 15px;
+			}
+			.primary-button {
+				margin-top: 30px;
+			}
+		}
+	}
+}

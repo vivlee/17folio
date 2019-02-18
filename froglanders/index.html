@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- Prevent Crawling --> 
+<meta name="robots" content="noindex" />
+
+	<title>Froglanders Café</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Froglanders Café, based in La Jolla, is a family-owned business dedicated to serving wholesome, all-natural frozen yogurt experiences.">
+
+   <link rel="icon" type="image/png" href="favicon.png" />
+	<link href='http://fonts.googleapis.com/css?family=Alegreya:400,700%7CAmatic+SC:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-i=2016.css">
+
+</head>
+
+<body class="home preload">
+
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a onclick="$('html, body').animate({ scrollTop: $('#about').offset().top -50}, 800);" href="#about">Our Story</a>
+		<a onclick="$('html, body').animate({ scrollTop: $('#menu').offset().top -50}, 800);" href="#menu">Menu</a>
+		<a onclick="$('html, body').animate({ scrollTop: $('#contact').offset().top -50}, 800);" href="#contact">Contact</a>
+	</div>
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div id="wrap-animation">
+		<div id="wrap">
+			<div class="wrapper-nav">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<a href="#wrap-animation" class="scrollto"><img src="images/logo-mini.svg" width="175" height="30" alt="Froglanders Café" class="logo-fixed"/></a>
+							<nav>
+								<ul class="list-unstyled">
+									<li class="first hidden-mobile"><a href="#about" class="scrollto bt-about">Our Story</a></li>
+									<li class="hidden-mobile"><a href="#menu" class="scrollto bt-menu">Menu</a></li>
+									<li class="hidden-mobile"><a href="#photos" class="scrollto bt-photos">How It Works</a></li>
+									<li class="hidden-mobile"><a href="#contact" class="scrollto bt-contact">Contact</a></li>
+									<li class="li-facebook"><a href="https://www.facebook.com/froglanders" class="bt-facebook" target="_blank"></a></li>
+									<li class="visible-mobile">
+										<div class="select-menu">
+											<div class="select">
+												<span>&nbsp;</span>
+											</div>
+											<select id="select-nav" onclick="openNav()">
+														<!--<option value="#about">À propos</option>
+														<option value="#menu">Menu</option>
+														<option value="#contact">Nous joindre</option>-->
+													</select>
+												</div>
+											</li>
+										</ul>
+									</nav>
+								</div>
+								<!-- Hours Banner -->
+								<div class="at-banner">
+									<div class="at-banner__content">
+										<div class="at-banner__text" id="timeDiv"></div>
+										<a href="#contact" class="at-banner__button scrollto bt-contact hidden-mobile" onclick="$('html, body').animate({ scrollTop: $('#contact').offset().top -50}, 800);">VIEW HOURS</a>
+									</div>
+									<div class="at-banner__close"></div>
+								</div> <!-- End Banner -->
+							</div>
+						</div>
+					</div>
+
+
+					<header id="headImage" class="hidden-mobile">
+						<div id="custom-slider">
+							<ul class="list-unstyled parallax-slider">
+								<li id="bg-header" style="background-image:url(images/header.jpg);" class="fullscreen background parallax" data-img-width="2350" data-img-height="1470" data-diff="100"></li>
+								<!-- White Logo -->
+								<div id="headlogo" class="hidden-mobile">
+								<img height="300" src="images/white-logo.svg"/>
+								</div> <!-- End Logo -->
+							</ul>
+							<a class="scrollDown" onclick="$('html, body').animate({ scrollTop: $('#about').offset().top -50}, 800);"><span>&nbsp;</span></a>
+						</div>
+					</header>
+					<header id="header-mobile" class="visible-mobile">
+						<div class="row">
+							<div class="col-lg-12">
+								<img src="images/logo.png" alt="Froglanders Café" width="240" height="314"/>
+							</div>
+						</div>
+					</header>
+
+					<section id="about">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-12">
+									<h2 class="title-section"><strong>- 31 Years -</strong>Our Story</h2>
+									<div class="text">
+										<p>Based in La Jolla, we are a family-owned business dedicated to serving wholesome, all-natural frozen yogurt experiences. Its name comes from a story more than 30 years old, a mix of coincidences and many nights of an Irish family meeting to share happiness and luck —values symbolized in many cultures by the frog.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Flavors & Toppings Section --> 
+					<section style="background-image:url(images/menu.jpg);" class="fullscreen background parallax bg-ambiance hidden-mobile spacer" data-img-width="1600" data-img-height="1000" data-diff="100"></section>
+					<section id="menu">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="wrapper-title">
+										<h2>Today's Flavors</h2>
+										<div class="pastille-plats animate-box wow animated rollIn">
+											<h3>Changes<strong>Daily</strong></h3>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-4 col-sm-6">
+									<img class="img-responsive img-portfolio" src="images/plain.jpg" alt="">
+									<div style="img-responsive">
+										<h3 class="text-center">Plain Tart</h3>
+										<p class="text-center"><img src="images/sugarfree.png" alt=""> Sugar Free</p>
+										<br>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<img class="img-responsive img-portfolio" src="images/mint.jpg" alt="">
+									<div style="img-responsive">
+										<h3 class="text-center">Irish Mint</h3>
+										<p class="text-center"><img src="images/dairyfree.png" alt=""> Dairy Free</p>
+										<br>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<img class="img-responsive img-portfolio" src="images/affogato.jpg" alt="">
+									<div style="img-responsive">
+										<h3 class="text-center">Frozen Affogato</h3>
+										<p class="text-center"><img src="images/sugarfree.png" alt=""> Sugar Free</p>
+										<br>
+									</div>
+								</div>
+							</div>
+
+<!-- Toppings Banner -->
+							<div class="row">
+								<div class="col-lg-12">
+									<h3 class="apporter-vin">More than 75 toppings to choose from</h3>
+								</div>
+							</div> <!-- End Toppings Banner -->
+
+							<br/><br/><br/><br/>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="text-menu">
+										<p><a href="https://www.facebook.com/froglanders/" target="_blank">Visit our Facebook page</a> for more information on our toppings.</p>
+										<p class="piment"><span class="etoile"></span>Some fruit selections may vary by season.</p>
+									</div>
+									<ul class="wrapper-accordion list-unstyled">
+										<li class="a-1">
+											<a href="#" class="menu-accordion">Fruits</a>
+											<div class="after-accordion" style="display:none;">
+												<ul class="list-unstyled">
+													<li>
+														<h3>Strawberries</h3>
+													</li>
+													<li>
+														<h3>Kiwi</h3>
+													</li>
+													<li>
+														<h3>Mangoes</h3>
+													</li>
+													<li>
+														<h3>Blackberries</h3>
+													</li>
+													<li>
+														<h3>Peaches</h3>
+													</li>
+													<li>
+														<h3>Mandarin Oranges</h3>
+													</li>
+													<li>
+														<h3>Cherries</h3>
+													</li>
+													<li>
+														<h3>Raisins</h3>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="a-2">
+											<a href="#" class="menu-accordion">Cookies & Pastries</a>
+											<div class="after-accordion" style="display:none;">
+												<ul class="list-unstyled">
+													<li>
+														<h3>Cookie Dough</h3>
+													</li>
+													<li>
+														<h3>Fudge Brownies</h3>
+													</li>
+													<li>
+														<h3>Mini Cream Puffs</h3>
+													</li>
+													<li>
+														<h3>Mini Eclairs</h3>
+													</li>
+													<li>
+														<h3>Chocolate & Strawberry Wafers</h3>
+													</li>
+													<li>
+														<h3>Graham Crackers</h3>
+													</li>
+													<li>
+														<h3>Cheesecake Bites</h3>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="a-3">
+											<a href="#" class="menu-accordion">Jellies</a>
+											<div class="after-accordion" style="display:none;">
+												<ul class="list-unstyled">
+													<li>
+														<h3>Coconut Jelly</h3>
+													</li>
+													<li>
+														<h3>Rainbow Jelly</h3>
+													</li>
+													<li>
+														<h3>Lychee Jelly</h3>
+													</li>
+													<li>
+														<h3>Mango Jelly</h3>
+													</li>
+													<li>
+														<h3>Green Apple Jelly</h3>
+													</li>
+													<li>
+														<h3>Grass Jelly</h3>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="a-4">
+											<a href="#" class="menu-accordion">Nuts & Seeds</a>
+											<div class="after-accordion" style="display:none;">
+												<ul class="list-unstyled">
+													<li>
+														<h3>Toasted Almonds</h3>
+													</li>
+													<li>
+														<h3>Sliced Almonds</h3>
+													</li>
+													<li>
+														<h3>Pecans</h3>
+													</li>
+													<li>
+														<h3>Caramel Pecans</h3>
+													</li>
+													<li>
+														<h3>Walnuts</h3>
+													</li>
+													<li>
+														<h3>Peanuts</h3>
+													</li>
+													<li>
+														<h3>Cashews</h3>
+													</li>
+													<li>
+														<h3>Sunflower Seeds</h3>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="a-5">
+											<a href="#" class="menu-accordion">Sweets</a>
+											<div class="after-accordion" style="display:none;">
+												<ul class="list-unstyled">
+													<li>
+														<h3>Mini M&M's</h3>
+													</li>
+													<li>
+														<h3>Mini Reeses' Pieces</h3>
+													</li>
+													<li>
+														<h3>Mini Peanut Butter Cups</h3>
+													</li>
+													<li>
+														<h3>Mini Caramel Cups</h3>
+													</li>
+													<li>
+														<h3>Butterfingers</h3>
+													</li>
+													<li>
+														<h3>Thin Mints</h3>
+													</li>
+													<li>
+														<h3>Sour Worms</h3>
+													</li>
+													<li>
+														<h3>Gummy Bears</h3>
+													</li>
+													<li>
+														<h3>Chocolate Chips</h3>
+													</li>
+													<li>
+														<h3>Peanut Butter Chips</h3>
+													</li>
+													<li>
+														<h3>Crushed Oreos</h3>
+													</li>
+													<li>
+														<h3>Marshmallows</h3>
+													</li>
+													<li>
+														<h3>Chocolate Sprinkles</h3>
+													</li>
+													<li>
+														<h3>Rainbow Sprinkles</h3>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="a-6">
+											<a href="#" class="menu-accordion">Sauces</a>
+											<div class="after-accordion" style="display:none;">
+												<ul class="list-unstyled">
+													<li>
+														<h3>Strawberry Syrup</h3>
+													</li>
+													<li>
+														<h3>Cherry Syrup</h3>
+													</li>
+													<li>
+														<h3>Condensed Milk</h3>
+													</li>
+													<li>
+														<h3>Whipped Cream</h3>
+													</li>
+													<li>
+														<h3>Raspberry Syrup</h3>
+													</li>
+													<li>
+														<h3>Lemon Syrup</h3>
+													</li>
+													<li>
+														<h3>Kiwi Syrup</h3>
+													</li>
+													<li>
+														<h3>Blackberry Syrup</h3>
+													</li>
+													<li>
+														<h3>Chocolate Syrup</h3>
+													</li>
+													<li>
+														<h3>Peanut Butter Sauce</h3>
+													</li>
+													<li>
+														<h3>Marshmallow Sauce</h3>
+													</li>
+													<li>
+														<h3>Hot Fudge</h3>
+													</li>
+													<li>
+														<h3>White Chocolate Syrup</h3>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-6">
+											<div id="carousel-menu" class="carousel slide" data-ride="carousel">
+												<!-- Indicators -->
+												<ol class="carousel-indicators">
+													<li data-target="#carousel-menu" data-slide-to="0" class="active"></li>
+													<li data-target="#carousel-menu" data-slide-to="1"></li>
+													<li data-target="#carousel-menu" data-slide-to="2"></li>
+													<li data-target="#carousel-menu" data-slide-to="3"></li>
+												</ol>
+
+												<!-- Wrapper for slides -->
+												<div class="carousel-inner">
+													<div class="item active">
+														<img src="images/img-slider-1.jpg" alt="...">
+													</div>
+													<div class="item">
+														<img src="images/img-slider-2.jpg" alt="...">
+													</div>
+													<div class="item">
+														<img src="images/img-slider-3.jpg" alt="...">
+													</div>
+													<div class="item">
+														<img src="images/img-slider-4.jpg" alt="...">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-12 col-md-12 col-sm-6">
+											<blockquote>
+												Dessert is like a feel-good song and the best ones make you dance.
+											</blockquote>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</section>
+
+						<section style="background-image:url(images/process.jpg);" class="fullscreen background parallax bg-ambiance hidden-mobile" data-img-width="1600" data-img-height="1000" data-diff="100"></section>
+
+						<section id="photos" class="hidden-mobile">
+
+							<h2 class="title-section"><strong>- Process -</strong>How It Works</h2>
+
+							<div class="process-description">
+								<div class = "row" style="margin-top: 5%">
+									<div style="background-image:url(images/size.jpg);" class = "col-xs-6 process_square" id = "process_pic">
+									</div>
+
+									<div class = "col-xs-6 process_square" id = "blue_square">
+										<p style="color:white;" id="process-p">Using only the finest ingredients, natural frozen yogurt is soft-served into a cup or cone of your choosing, using a custom machine.</p>
+									</div>
+								</div>
+
+								<div class = "row" style="margin-bottom: 5%">
+									<div class = "col-xs-6 process_square" id="white-square">
+										<p id="process-p">No powders. No artificial sweeteners. We believe in the goodness of pure, simple fruits and candies to top the best frozen yogurt desserts.</p>
+									</div>
+
+									<div style="background-image:url(images/toppings.jpg);" class = "col-xs-6 process_square" id = "natural_pic">
+									</div>
+								</div>
+							</div>
+
+						</section>
+
+						<footer id="contact">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-12">
+										<div class="wrapper-title">
+											<h2>Contact Us</h2>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3 col-sm-6 col-xs-6">
+										<h3>Address</h3>
+										<div class="adress">
+											<a href="https://goo.gl/maps/qDpaQrKFNg82" target="_blank">
+												<h4>Froglanders Café</h4>
+												<p>915 Pearl St, Ste A <br/>La Jolla, CA 92037</p>
+											</a>
+										</div>
+										<div class="tel">
+											<p><a href="tel:8584593764" style="color:#fff; font-weight:normal;">(858) 459-3764</a></p>
+										</div>
+										<div class="mail">
+											<a href="mailto:shah@froglanders.com" target="_blank">shah@froglanders.com</a>
+										</div>
+										<!--<div class="facebook">
+											<a href="https://www.facebook.com/froglanders" target="_blank">/froglanders</a>
+										</div>-->
+									</div>
+									<div class="col-md-3 col-sm-6 col-xs-6">
+										<h3>Café Hours</h3>
+										<div class="heures">
+											<h4>Monday - Thursday</h4>
+											<p>Open from <br/>9:00am - 10:00pm</p><br/>
+											<h4>Friday - Sunday</h4>
+											<p>Open from <br/>9:00am - 10:30pm</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<!--<img src="images/map.png" alt="Froglanders Café - 915 Pearl St, Ste A, La Jolla, CA 92037"/>-->
+										<!-- Embedded Google Maps -->
+										<div class="mbr-map">
+										<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJrc13_uMD3IARBboG6Sgt27w" allowfullscreen=""></iframe>
+										</div> <!-- Google Maps End -->
+									</div>
+								</div>
+							</div>
+							<div id="copy">
+								<div class="container">
+									<div class="row">
+										<div class="col-lg-12">
+											<p>© Froglanders Café, 2017. All Rights Reserved.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</footer>
+					</div>
+				</div>
+
+				<div class="bar-ie8">
+					<div class="bar-upgrade">
+						<div class="container">
+							<p>This site is not optimized for Internet Explorer 7 and 8.<a href="http://windows.microsoft.com/fr-ch/internet-explorer/download-ie" target="_blank">An update is required, click here to download the latest browser version</a></p>
+						</div>
+					</div>
+				</div>
+
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+				<script src="js/affix.js"></script>
+				<script src="js/alert.js"></script>
+				<script src="js/button.js"></script>
+				<script src="js/carousel.js"></script>
+				<script src="js/collapse.js"></script>
+				<script src="js/detect.js"></script>
+				<script src="js/scrollspy.js"></script>
+				<script src="js/jquery.mousewheel.js"></script>
+				<script src="js/pace.min.js"></script>
+				<script src="js/tab.js"></script>
+				<script src="js/tooltip.js"></script>
+				<script src="js/transition.js"></script>
+				<script src="js/css_browser_selector.js"></script>
+				<script src="js/script.js?i=2016"></script>
+
+				<script>
+					jQuery('.at-banner__close').on('click', function() {
+						jQuery(this).parent().remove();
+					});</script>
+
+					<script>
+						var now = new Date();
+						var weekday = new Array(7);
+						weekday[0] = "Sunday";
+						weekday[1] = "Monday";
+						weekday[2] = "Tuesday";
+						weekday[3] = "Wednesday";
+						weekday[4] = "Thursday";
+						weekday[5] = "Friday";
+						weekday[6] = "Saturday";
+
+						var checkTime = function() {
+							var today = weekday[now.getDay()];
+							var timeDiv = document.getElementById('timeDiv');
+							var dayOfWeek = now.getDay();
+							var hour = now.getHours();
+							var minutes = now.getMinutes();
+
+  //add AM or PM
+  var suffix = hour >= 12 ? "PM" : "AM";
+
+  // add 0 to one digit minutes
+  if (minutes < 10) {
+  	minutes = "0" + minutes
+  };
+
+  if ((dayOfWeek == 0 || dayOfWeek == 6 || dayOfWeek == 5) && hour >= 9 && hour <= 23.5) {
+    hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
+    timeDiv.innerHTML = 'it\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' - we\'re open until 10:30 today!';
+    timeDiv.className = 'open';
+} 
+
+else if ((dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4) && hour >= 9 && hour <= 22) {
+	hour = ((hour + 11) % 12 + 1);
+	timeDiv.innerHTML = 'it\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' - we\'re open until 10:00pm today!';
+	timeDiv.className = 'open';
+} 
+
+else {
+	if (hour == 0 || hour > 12) {
+      hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
+  }
+  timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' - we\'re closed!';
+  timeDiv.className = 'closed';
+}
+};
+
+var currentDay = weekday[now.getDay()];
+var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
+$(currentDayID).toggleClass("today"); //hightlights today in the view hours modal popup
+
+setInterval(checkTime, 1000);
+checkTime();</script>
+
+<script>
+	/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		document.getElementById("main").style.marginLeft = "250px";
+		document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+	}
+
+	/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("main").style.marginLeft = "0";
+		document.body.style.backgroundColor = "white";
+	}
+</script>
+
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+
+</body>
+</html>
+<!-- Localized -->

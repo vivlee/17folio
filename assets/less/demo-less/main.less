@@ -1,0 +1,53 @@
+body {
+	font-family: @base-font;
+	font-weight: normal;
+	color: @base-color;
+  font-size: 15px;
+  line-height: 1.8;
+  padding: 30px;
+  background: @side-bg;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @media screen and (max-width: 860px) {
+		padding: 15px;
+	}
+  .content {
+  	background: @white;
+  	position: relative;
+  	z-index: 9;
+  }
+}
+
+.dark-version {
+	background: @darker-bg;
+	.content {
+  	background: @dark-bg;
+  }
+}
+
+.text-center {
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: @heading-color;
+}
+
+p {
+	font-family: @base-font;
+	color: @base-color;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 0.2px;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+section {
+	padding: 70px 0px;
+}
+

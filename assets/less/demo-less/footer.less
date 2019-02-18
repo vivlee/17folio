@@ -1,0 +1,40 @@
+footer {
+	margin-top: 40px;
+	.footer {
+		.footer-content {
+			@media (max-width: 768px) {
+				text-align: center;
+			}
+			border-top: 1px solid @border-color;
+			padding: 100px 0 80px 0;
+			a:hover {
+				color: @accent-color;
+				transition: all .5s;
+			}
+			span {
+				float: right;
+				font-size: 14px;
+				@media (max-width: 768px) {
+					float: none;
+				}
+			}
+		}
+	}
+}
+
+.dark-version {
+	footer {
+		.footer {
+			.footer-content {
+				border-top: 1px solid #262626;
+				a {
+					color: @white;
+				}
+				a:hover {
+					color: @deccent-color;
+					transition: all .5s;
+				}
+			}
+		}
+	}
+}
